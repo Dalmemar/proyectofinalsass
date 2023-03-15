@@ -1,0 +1,330 @@
+@use "./variables";
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/*MOBILE FIRST*/
+
+header{
+    display: flex;
+    justify-content: center;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+
+        ul{
+            display: flex;
+
+            li{
+                list-style: none;
+                margin-right: 20px;
+                margin-top: 50px;
+            }
+        }
+}
+
+.h1_index {
+    font-size: variables.$h1_size;
+    font-family: variables.$font_h1;
+    color: variables.$h1_color;
+}
+
+.div_buttons {
+    display: flex;
+    justify-content: center;
+        button {
+            background-color: rgb(172, 133, 240);
+            border-bottom: none;
+            border-radius: 10px;
+            width: 100px;
+            margin: 10px;
+            font-family: variables.$font_general ;
+            font-weight: lighter;
+            color: whitesmoke;
+        }
+    
+}
+
+.div_img1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+
+        img{
+            width: 320px;
+        }
+}
+
+.div_h2_index {
+    padding-top: 30px;
+    padding-bottom: 20px;
+        h2{
+            font-variant: small-caps;
+            font-family: variables.$font_general;
+            font-weight: variables.$h2_weight;
+        }
+}
+
+.p_index {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+@mixin tamanos ($ancho, $alto){
+    width: $ancho;
+    height: $alto;
+}
+
+.section_divs_servicios {
+    display: flex;
+    justify-content: center;
+        div{
+            @include tamanos(100px, 100px);
+            margin-right: 5px; 
+        }
+        
+}
+
+.div_p_CM_DW {
+    background-color: rgba(172, 255, 47, 0.422);   
+}
+
+.div_p_SM {
+    background-color:  rgba(172, 133, 240, 0.422) ;
+}
+
+
+.div_p_img2 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+        p{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+.div_img2 {
+    display: flex;
+    justify-content: center;
+
+        img{
+            width: 320px;
+        }
+}
+
+.button_index_clientes {
+    background-color: rgb(172, 133, 240);
+    border-bottom: none;
+    border-radius: 10px;
+    width: 300px;
+    margin: 10px;
+    font-family: variables.$font_general ;
+    font-weight: lighter;
+    color: whitesmoke;
+}
+
+@media screen and (min-width:480px) {
+    .div_h2_index {
+        h2 {
+            font-size: 3rem;
+        }
+    }
+}
+
+@media screen and (min-width:600px) {
+
+    .h1_index {
+        padding-top: 50px;
+    }
+
+
+    .section_divs_servicios {
+        display: flex;
+        justify-content: center;
+            div{
+                @include tamanos(120px, 120px);
+                margin-right: 5px; 
+            }
+            
+    }
+}
+
+@media screen and (min-width:1023px) {
+    #grid_container {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(7, 1fr);
+        grid-template-areas: 
+        "header header"
+        "main img1"
+        "section1 section1"
+        "section2 section3"
+        "section4 section4"
+        "section5 section6"
+        "footer footer";
+}
+
+
+.header_container {
+    grid-area: header;   
+    background-color: greenyellow;   
+}
+
+.main_container {
+    grid-area: main;
+    padding-left: 50px;
+    padding-top: 100px;
+    button{
+
+        width: 200px;
+
+    }
+}
+
+.h1_servicios {
+    font-size: variables.$h1_size + 1;
+    padding-top: 50px;    
+    
+}
+
+.img1_container{
+    grid-area: img1;
+    padding-top: 50px;
+}
+
+.div_img1{
+    img{
+        width: 95%;
+    }
+}
+
+
+.section1_container {
+    grid-area: section1;
+    padding-bottom: 60px;
+    button{
+        width: 200px;
+    }
+}
+
+.section2_container {
+    grid-area: section2;
+    padding-left: 120px;
+
+}
+
+.section3_container {
+    grid-area: section3;
+    padding-top: 20px;
+}
+
+.section4_container {
+    grid-area: section4;  
+    padding: 30px; 
+}
+
+.Section5_container {
+    grid-area: section5;
+    
+}
+
+.section6_container {
+    grid-area: section6;
+    padding-left: 10px;
+    width: 500px;
+    padding-top: 180px;
+    font-weight: bolder;
+    font-style: italic;
+    background-image: url(../imagenes/circulo.pnggit);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.footer_container{
+    grid-area: footer;
+}
+
+
+}
+
+@media screen and (min-width:1200px) {
+
+    .section1_container{
+        h2{
+            font-size: 5rem;
+           
+        }
+        p{
+            font-size: 1.5rem;
+        }
+        button{
+            height: 35px;
+            font-size: larger;
+        }
+       }
+   .section2_container{
+    h2{
+        font-size: 5rem;
+       
+    }
+    p{
+        font-size: 1.5rem;
+    }
+  
+   }
+
+   .main_container{
+    p{
+        font-size: 1.5rem; 
+    }
+    button{
+        height: 35px;
+        font-size: larger;
+    }
+   }
+
+   .section_divs_servicios {
+    display: flex;
+    justify-content: center;
+        div{
+            @include tamanos(150px, 150px);
+            margin-right: 5px; 
+            padding-top: 30px;
+        }
+        
+}
+
+.section4_container {
+    p{
+        font-size: 1.5rem;
+    }
+}
+
+.section6_container{
+    p{
+        font-size: 1.5rem;
+    }
+    button{
+        height: 35px;
+        font-size: larger;
+    }
+}
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,118 @@
+@use "./variables";
+
+.h1_contacto{
+    font-family: variables.$font_h1;
+    font-size: variables.$h1_size - 3;
+    color: variables.$h1_color;
+    padding-top: 20px;
+}
+
+.p_contacto {
+    font-family: variables.$font_general;
+}
+
+.main_contacto {
+    form{
+        display: flex;
+        flex-direction: column;
+        padding-left: 5px;
+        padding-right: 5px;
+        
+            input{
+                background-color: rgba(172, 255, 47, 0.422);
+                margin: 5px;
+            }
+            textarea{
+                background-color: rgba(172, 255, 47, 0.422);
+            }
+            label{
+                font-family: variables.$font_general ;
+            }
+    }
+
+}
+
+.buttons_contacto {
+            border-bottom: none;
+            border-radius: 10px;
+            width: 100px;
+            font-family: variables.$font_general ;
+            font-weight: lighter;  
+            
+}
+
+
+@media screen and (min-width:480px) {
+
+    .h1_contacto{
+        font-size: variables.$h1_size - 1;
+    }
+    .main_contacto {
+        form{
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+}
+
+@media screen and (min-width:600px) {
+    .main_contacto {
+        form{
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+}
+}
+
+@media screen and (min-width:1023px){
+    .main_contacto {
+        form{
+            padding-left: 20px;
+            padding-right: 500px;
+        }
+    }
+    
+    .main_contacto {
+        background-image: url(../imagenes/34839031_8232295.png);
+        background-repeat: no-repeat;
+        background-size: 30%;
+        background-position: 600px;
+        
+    }
+}
+
+@media screen and (min-width:1200px) {
+
+    /*Contacto*/
+
+    .main_contacto {
+        background-image: url(../imagenes/34839031_8232295.png);
+        background-repeat: no-repeat;
+        background-size: 30%;
+        padding-bottom: 35px;
+        padding-top: 40px;
+        background-position: 780px;
+        padding-top: 80px;
+        form{
+            padding-left: 80px;
+            padding-right: 500px;
+        }
+
+    }
+
+    .h1_contacto {
+        font-size: variables.$h1_size + 1;
+    }
+
+    .p_contacto{
+        font-size: 2rem;
+        font-family: variables.$font_general;
+    }
+    
+
+
+}
+
+
+
+

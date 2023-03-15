@@ -1,0 +1,568 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/*MOBILE FIRST*/
+header {
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+footer ul {
+  display: flex;
+}
+footer ul li {
+  list-style: none;
+  margin-right: 20px;
+  margin-top: 50px;
+}
+
+.h1_index {
+  font-size: 7rem;
+  font-family: "Covered By Your Grace", cursive;
+  color: greenyellow;
+}
+
+.div_buttons {
+  display: flex;
+  justify-content: center;
+}
+.div_buttons button {
+  background-color: rgb(172, 133, 240);
+  border-bottom: none;
+  border-radius: 10px;
+  width: 100px;
+  margin: 10px;
+  font-family: "Roboto", sans-serif;
+  font-weight: lighter;
+  color: whitesmoke;
+}
+
+.div_img1 {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+.div_img1 img {
+  width: 320px;
+}
+
+.div_h2_index {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+.div_h2_index h2 {
+  font-variant: small-caps;
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+}
+
+.p_index {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.section_divs_servicios {
+  display: flex;
+  justify-content: center;
+}
+.section_divs_servicios div {
+  width: 100px;
+  height: 100px;
+  margin-right: 5px;
+}
+
+.div_p_CM_DW {
+  background-color: rgba(172, 255, 47, 0.422);
+}
+
+.div_p_SM {
+  background-color: rgba(172, 133, 240, 0.422);
+}
+
+.div_p_img2 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.div_p_img2 p {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.div_img2 {
+  display: flex;
+  justify-content: center;
+}
+.div_img2 img {
+  width: 320px;
+}
+
+.button_index_clientes {
+  background-color: rgb(172, 133, 240);
+  border-bottom: none;
+  border-radius: 10px;
+  width: 300px;
+  margin: 10px;
+  font-family: "Roboto", sans-serif;
+  font-weight: lighter;
+  color: whitesmoke;
+}
+
+@media screen and (min-width: 480px) {
+  .div_h2_index h2 {
+    font-size: 3rem;
+  }
+}
+@media screen and (min-width: 600px) {
+  .h1_index {
+    padding-top: 50px;
+  }
+  .section_divs_servicios {
+    display: flex;
+    justify-content: center;
+  }
+  .section_divs_servicios div {
+    width: 120px;
+    height: 120px;
+    margin-right: 5px;
+  }
+}
+@media screen and (min-width: 1023px) {
+  #grid_container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-areas: "header header" "main img1" "section1 section1" "section2 section3" "section4 section4" "section5 section6" "footer footer";
+  }
+  .header_container {
+    grid-area: header;
+    background-color: greenyellow;
+  }
+  .main_container {
+    grid-area: main;
+    padding-left: 50px;
+    padding-top: 100px;
+  }
+  .main_container button {
+    width: 200px;
+  }
+  .h1_servicios {
+    font-size: 8rem;
+    padding-top: 50px;
+  }
+  .img1_container {
+    grid-area: img1;
+    padding-top: 50px;
+  }
+  .div_img1 img {
+    width: 95%;
+  }
+  .section1_container {
+    grid-area: section1;
+    padding-bottom: 60px;
+  }
+  .section1_container button {
+    width: 200px;
+  }
+  .section2_container {
+    grid-area: section2;
+    padding-left: 120px;
+  }
+  .section3_container {
+    grid-area: section3;
+    padding-top: 20px;
+  }
+  .section4_container {
+    grid-area: section4;
+    padding: 30px;
+  }
+  .Section5_container {
+    grid-area: section5;
+  }
+  .section6_container {
+    grid-area: section6;
+    padding-left: 10px;
+    width: 500px;
+    padding-top: 180px;
+    font-weight: bolder;
+    font-style: italic;
+    background-image: url(../imagenes/circulo.pnggit);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .footer_container {
+    grid-area: footer;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section1_container h2 {
+    font-size: 5rem;
+  }
+  .section1_container p {
+    font-size: 1.5rem;
+  }
+  .section1_container button {
+    height: 35px;
+    font-size: larger;
+  }
+  .section2_container h2 {
+    font-size: 5rem;
+  }
+  .section2_container p {
+    font-size: 1.5rem;
+  }
+  .main_container p {
+    font-size: 1.5rem;
+  }
+  .main_container button {
+    height: 35px;
+    font-size: larger;
+  }
+  .section_divs_servicios {
+    display: flex;
+    justify-content: center;
+  }
+  .section_divs_servicios div {
+    width: 150px;
+    height: 150px;
+    margin-right: 5px;
+    padding-top: 30px;
+  }
+  .section4_container p {
+    font-size: 1.5rem;
+  }
+  .section6_container p {
+    font-size: 1.5rem;
+  }
+  .section6_container button {
+    height: 35px;
+    font-size: larger;
+  }
+}
+/*MOBILE FIRST*/
+.h1_clientes {
+  font-size: 3rem;
+  font-family: "Covered By Your Grace", cursive;
+  color: greenyellow;
+  padding-top: 10px;
+}
+
+.main_clientes {
+  padding-top: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.main_clientes div {
+  width: 280px;
+  height: 280px;
+  margin: 5px;
+  font-family: "Roboto", sans-serif;
+}
+.main_clientes div h3 {
+  font-weight: bold;
+  font-variant: small-caps;
+}
+
+.div2_clientes {
+  background-color: rgba(172, 255, 47, 0.422);
+  padding-top: 10px;
+  padding-right: 10px;
+  text-align: right;
+}
+
+.div_1_3_clientes {
+  background-color: rgba(172, 133, 240, 0.422);
+  padding-left: 10px;
+  padding-top: 25px;
+}
+
+@media screen and (min-width: 480px) {
+  .h1_clientes {
+    font-size: 4rem;
+  }
+  .div_div2 {
+    padding-left: 160px;
+  }
+}
+@media screen and (min-width: 600px) {
+  .div_div2 {
+    padding-left: 250px;
+  }
+  .div_div3 {
+    padding-left: 50px;
+  }
+}
+@media screen and (min-width: 1023px) {
+  .main_clientes {
+    padding-right: 80px;
+    padding-left: 100px;
+    background-image: url(../imagenes/34839191_8232287.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+  }
+  .div_div2 {
+    padding-left: 600px;
+  }
+  .div_div3 {
+    padding-left: 1px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .div_div2 {
+    padding-left: 750px;
+  }
+  .h1_clientes {
+    padding-top: 50px;
+    font-size: 6rem;
+  }
+}
+.h1_contacto {
+  font-family: "Covered By Your Grace", cursive;
+  font-size: 4rem;
+  color: greenyellow;
+  padding-top: 20px;
+}
+
+.p_contacto {
+  font-family: "Roboto", sans-serif;
+}
+
+.main_contacto form {
+  display: flex;
+  flex-direction: column;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.main_contacto form input {
+  background-color: rgba(172, 255, 47, 0.422);
+  margin: 5px;
+}
+.main_contacto form textarea {
+  background-color: rgba(172, 255, 47, 0.422);
+}
+.main_contacto form label {
+  font-family: "Roboto", sans-serif;
+}
+
+.buttons_contacto {
+  border-bottom: none;
+  border-radius: 10px;
+  width: 100px;
+  font-family: "Roboto", sans-serif;
+  font-weight: lighter;
+}
+
+@media screen and (min-width: 480px) {
+  .h1_contacto {
+    font-size: 6rem;
+  }
+  .main_contacto form {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media screen and (min-width: 600px) {
+  .main_contacto form {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media screen and (min-width: 1023px) {
+  .main_contacto form {
+    padding-left: 20px;
+    padding-right: 500px;
+  }
+  .main_contacto {
+    background-image: url(../imagenes/34839031_8232295.png);
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position: 600px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /*Contacto*/
+  .main_contacto {
+    background-image: url(../imagenes/34839031_8232295.png);
+    background-repeat: no-repeat;
+    background-size: 30%;
+    padding-bottom: 35px;
+    padding-top: 40px;
+    background-position: 780px;
+    padding-top: 80px;
+  }
+  .main_contacto form {
+    padding-left: 80px;
+    padding-right: 500px;
+  }
+  .h1_contacto {
+    font-size: 8rem;
+  }
+  .p_contacto {
+    font-size: 2rem;
+    font-family: "Roboto", sans-serif;
+  }
+}
+/*MOBILE FIRST*/
+#Luca:target p {
+  max-height: 150px;
+  padding: 10px;
+}
+
+#Cata:target p {
+  max-height: 150px;
+  padding: 10px;
+}
+
+.div_img_nosotros {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.div_img_nosotros img {
+  width: 90%;
+  padding-left: 50px;
+}
+.div_img_nosotros p {
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  margin: 10px;
+  overflow: hidden;
+  max-height: 0;
+  transition: all 0.2s ease-in-out;
+}
+.div_img_nosotros a {
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
+  color: black;
+  font-weight: bolder;
+}
+
+@media screen and (min-width: 480px) {
+  .div_img_nosotros img {
+    width: 70%;
+  }
+  .div_p_nosotros {
+    padding: 20px;
+  }
+}
+@media screen and (min-width: 1023px) {
+  .div_img_nosotros {
+    display: flex;
+    flex-direction: row;
+    padding-left: 80px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .div_p_nosotros p {
+    font-size: 1.5rem;
+  }
+  .div_img_nosotros p {
+    font-size: 1.5rem;
+  }
+}
+/*MOBILE FIRST*/
+.h1_servicios {
+  font-size: 6rem;
+  font-family: "Covered By Your Grace", cursive;
+  color: greenyellow;
+  padding-top: 20px;
+}
+
+#menu1 a {
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
+  background-color: rgba(172, 133, 240, 0.422);
+  color: black;
+}
+#menu1 p {
+  overflow: hidden;
+  max-height: 0;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  transition: all 0.2s ease-in-out;
+}
+#menu1:target p {
+  max-height: 150px;
+  padding: 10px;
+}
+
+#menu3 a {
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
+  background-color: rgba(172, 255, 47, 0.422);
+  color: black;
+  border-bottom: none;
+}
+#menu3 p {
+  overflow: hidden;
+  max-height: 0;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  transition: all 0.2s ease-in-out;
+}
+#menu3:target p {
+  max-height: 150px;
+  padding: 10px;
+}
+
+#menu4 a {
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
+  background-color: rgba(172, 133, 240, 0.422);
+  color: black;
+}
+#menu4 p {
+  overflow: hidden;
+  max-height: 0;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  transition: all 0.2s ease-in-out;
+}
+#menu4:target p {
+  max-height: 150px;
+  padding: 10px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 480px) {
+  .h1_servicios {
+    font-size: 7rem;
+  }
+}
+@media screen and (min-width: 1023px) {
+  .div_h1_servicios {
+    display: flex;
+    justify-content: center;
+    padding-left: 100px;
+  }
+  .div_h1_servicios h1 {
+    padding-top: 180px;
+  }
+}
+
+/*# sourceMappingURL=estilo.css.map */
