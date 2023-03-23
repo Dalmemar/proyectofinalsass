@@ -9,6 +9,13 @@
     padding-top: 10px;
 }
 
+.div_h2 {
+    h2{
+        font-family: variables.$font_general;
+        font-style: oblique;
+    }
+}
+
 @mixin tamanos ($ancho, $alto){
     width: $ancho;
     height: $alto;
